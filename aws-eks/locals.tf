@@ -1,5 +1,5 @@
 locals {
-  cluster_name = "test-eks-${random_string.suffix.result}"
+  cluster_name = "test-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
